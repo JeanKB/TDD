@@ -1,6 +1,8 @@
 package br.com.caelum.leilao.servico;
 
-import org.junit.Assert;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
 
 public class PalindromoTest {
@@ -10,7 +12,7 @@ public class PalindromoTest {
         Palindromo p = new Palindromo();
         boolean resultado = p.ehPalindromo("Socorram-me subi no onibus em Marrocos");
         
-        Assert.assertTrue(resultado);
+        assertTrue(resultado);
     }
 	
 	@Test
@@ -18,7 +20,7 @@ public class PalindromoTest {
         Palindromo palindromo = new Palindromo();
         boolean resultado = palindromo.ehPalindromo("Anotaram a data da maratona");
         
-        Assert.assertTrue(resultado);
+        assertTrue(resultado);
     }
 	
     @Test
@@ -26,6 +28,6 @@ public class PalindromoTest {
         Palindromo palindromo = new Palindromo();
         boolean resultado = palindromo.ehPalindromo("E preciso amar as pessoas como se nao houvesse amanha");
         
-        Assert.assertFalse(resultado);
+        assertFalse(resultado);
     }
 }
